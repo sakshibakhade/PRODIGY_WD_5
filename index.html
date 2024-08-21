@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Weather App</h1>
+        <div>
+            <input type="text" placeholder="Enter city name" id="input">
+
+            <button id="btn">Search</button>
+        </div>
+
+    </div>
+    <div class="card fade-up" id="main-div">
+        <h2><span class="city">Climate</span> <span class="region">Change</span></h2>
+        <h3 class="text">-----</h3>
+        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="logo">
+
+
+        <h2><span class="temp">00</span>&deg;C</h2>
+
+
+        <p class="date">Last updated : <span class="dateTime">yyyy-mm-dd hh:mm</span></p>
+
+        <div class="main">
+
+            <div id="humidity">
+                <p>Humidity :</p>
+               <h3><span class="humidity">--</span></h3> 
+            </div>
+    
+            <div id="windSpeed">
+                <p>Wind Speed :</p>
+                <h3><span class="windSpeed">--</span></h3>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+
+</html>

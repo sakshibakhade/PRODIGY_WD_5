@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #FFC7C7;
+
+}
+
+.container .heading {
+    margin: 10px 0px;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:black;
+}
+
+.container div {
+    margin: 20px 0px;
+}
+
+.container div input {
+    width: 200px;
+    background-color: #DED0B6;
+    height: 25px;
+    font-size: 16px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    color: black;
+
+}
+
+
+
+.container div button {
+    width: 70px;
+    height: 28px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: #DED0B6;
+    color: black;
+    border-radius: 5px;
+
+}
+
+.container div button:active {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.card {
+    background-color: #FAEED1;
+    border: 1px solid rgb(137, 137, 137);
+    color: black;
+    padding-top: 10px;
+    border-radius: 10px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+
+}
+
+.card .logo {
+    width: 200px;
+}
+
+.card * {
+    margin: 8px 0px;
+}
+
+.text {
+    font-size: 25px;
+}
+
+.temp {
+    font-size: 30px;
+}
+
+.city,
+.region {
+    font-size: 30px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main #humidity {
+    border-radius: 10px;
+    width: 40%;
+    height: 75px;
+    border: 1px solid rgb(108, 108, 108);
+    text-align: left;
+    padding-left: 10px;
+    background-color: #EEC759;
+
+}
+
+.main #windSpeed {
+    width: 40%;
+    border: 1px solid rgb(102, 102, 102);
+    margin-left: 10px;
+    text-align: left;
+    height: 75px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #EEC759;
+
+}
+
+h5 {
+    margin: 10px 0px;
+    color:white;
+}
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+    }
+
+    .container .heading {
+        font-size: 35px;
+    }
+
+    .container div input {
+        width: 175px;
+        height: 22px;
+        font-size: 14px;
+    }
+
+    .container div button {
+        width: 60px;
+        height: 25px;
+    }
+
+    .card .logo {
+        width: 150px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .temp {
+        font-size: 25px;
+    }
+
+    .city,
+    .region {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        width: 85%;
+    }
+
+    .city,
+    .region {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .dateTime,
+    .date {
+        font-size: 12px;
+    }
+
+    .main #humidity p {
+        font-size: 12px;
+    }
+
+    .main #windSpeed p {
+        font-size: 12px;
+    }
+
+    .card .logo {
+        width: 130px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .card {
+        width: 90%;
+    }
+
+    .city,
+    .region {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .dateTime,
+    .date {
+        font-size: 10px;
+    }
+
+    .main #humidity p {
+        font-size: 10px;
+    }
+
+    .main #windSpeed p {
+        font-size: 10px;
+    }
+
+    .card .logo {
+        width: 120px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .city,
+    .region {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main #windSpeed {
+        margin-left: 0px;
+    }
+}
